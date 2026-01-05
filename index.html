@@ -1,4 +1,4 @@
-<!DOCT<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
         .fade-in {
             animation: fadeIn 1.5s ease-in;
         }
@@ -20,6 +24,44 @@
         .card:hover {
             transform: scale(1.03);
             transition: 0.3s;
+        }
+
+        header {
+            padding: 80px 20px; 
+            text-align: center;
+        }
+
+        header img {
+            max-width: 90%;
+            height: auto;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        header p {
+            font-size: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            header {
+                padding: 120px 20px;
+            }
+            header h1 {
+                font-size: 2.5rem;
+            }
+            header p {
+                font-size: 1.2rem;
+            }
+        }
+
+        section#profil {
+            padding-bottom: 50px;
+        }
+
+        footer {
+            font-size: 0.9rem;
         }
     </style>
 </head>
@@ -41,15 +83,12 @@
       </ul>
     </div>
   </div>
-
 </nav>
 
-
-
-<header class="bg-light text-center p-5 mt-5 fade-in">
-    <img src="logo.gif" alt="Logo" width="400" class="mb-3">
+<header class="bg-light mt-5 fade-in">
+    <img src="logo.gif" alt="Logo" class="mb-3">
     <h4 id="greeting" class="text-primary"></h4>
-    <h1> Selamat Datang di PT Steam Gift Club</h1>
+    <h1>Selamat Datang di PT Steam Gift Club</h1>
     <p class="mt-3">
         Perusahaan teknologi yang bergerak di industri video game dan hiburan digital interaktif.
     </p>
@@ -59,12 +98,11 @@
     </button>
 </header>
 
-
 <section id="profil" class="container mt-5 fade-in">
     <h2 class="text-center mb-4">Profil Perusahaan</h2>
 
     <div class="row g-4">
-        <div class="col-md-4">
+        <div class="col-12 col-md-4">
             <div class="card h-100 shadow">
                 <div class="card-body">
                     <h5 class="card-title">Bidang Usaha</h5>
@@ -75,7 +113,7 @@
             </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-12 col-md-4">
             <div class="card h-100 shadow">
                 <div class="card-body">
                     <h5 class="card-title">Teknologi</h5>
@@ -86,7 +124,7 @@
             </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-12 col-md-4">
             <div class="card h-100 shadow">
                 <div class="card-body">
                     <h5 class="card-title">Platform</h5>
@@ -114,5 +152,3 @@
 
 </body>
 </html>
-
-
